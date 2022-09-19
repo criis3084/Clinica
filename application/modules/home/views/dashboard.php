@@ -234,6 +234,8 @@
                             </li>
                         <?php } ?>
 
+                        
+
                         <?php if ($this->ion_auth->in_group(array('admin', 'Doctor', 'Nurse', 'Receptionist'))) { ?>
                             <li class="sub-menu">
                                 <a href="javascript:;" >
@@ -292,32 +294,18 @@
                                     <span><?php echo lang('human_resources'); ?></span>
                                 </a>
                                 <ul class="sub">
-                                    <li><a href="nurse"><i class="fa fa-user"></i><?php echo lang('nurse'); ?></a></li>
+                                   
                                     <li><a href="pharmacist"><i class="fa fa-user"></i><?php echo lang('pharmacist'); ?></a></li>
                                     <li><a href="laboratorist"><i class="fa fa-user"></i><?php echo lang('laboratorist'); ?></a></li>
-                                    <li><a href="accountant"><i class="fa fa-user"></i><?php echo lang('accountant'); ?></a></li>
                                     <li><a href="receptionist"><i class="fa fa-user"></i><?php echo lang('receptionist'); ?></a></li>
                                 </ul>
                             </li>
                         <?php } ?>
-                        <?php if ($this->ion_auth->in_group('admin')) { ?>
-                            <li class="sub-menu">
-                                <a href="javascript:;" >
-                                    <i class="fa fa-money-check"></i>
-                                    <span><?php echo lang('financial_activities'); ?></span>
-                                </a>
-                                <ul class="sub">
-                                    <li><a  href="finance/payment"><i class="fa fa-money-check"></i> <?php echo lang('payments'); ?></a></li>
-                                    <li><a  href="finance/addPaymentView"><i class="fa fa-plus-circle"></i><?php echo lang('add_payment'); ?></a></li>
-                                    <li><a  href="finance/paymentCategory"><i class="fa fa-edit"></i><?php echo lang('payment_procedures'); ?></a></li>
-                                    <li><a  href="finance/expense"><i class="fa fa-money-check"></i><?php echo lang('expense'); ?></a></li>
-                                    <li><a  href="finance/addExpenseView"><i class="fa fa-plus-circle"></i><?php echo lang('add_expense'); ?></a></li>
-                                    <li><a  href="finance/expenseCategory"><i class="fa fa-edit"></i><?php echo lang('expense_categories'); ?> </a></li>
 
 
-                                </ul>
-                            </li> 
-                        <?php } ?>
+
+
+                     
 
                         <?php if ($this->ion_auth->in_group('Receptionist')) { ?>
                             <li>
@@ -349,6 +337,7 @@
                             </li>
                         <?php } ?>
 
+                        
                         <?php
                         if ($this->ion_auth->in_group(array('Receptionist'))) {
                             ?>
@@ -419,9 +408,9 @@
                                 </a>
                                 <ul class="sub">
                                     <li><a  href="medicine"><i class="fa fa-medkit"></i><?php echo lang('medicine_list'); ?></a></li>
-                                    <li><a  href="medicine/addMedicineView"><i class="fa fa-plus-circle"></i><?php echo lang('add_medicine'); ?></a></li>
+                                  
                                     <li><a  href="medicine/medicineCategory"><i class="fa fa-edit"></i><?php echo lang('medicine_category'); ?></a></li>
-                                    <li><a  href="medicine/addCategoryView"><i class="fa fa-plus-circle"></i><?php echo lang('add_medicine_category'); ?></a></li>
+                                   
                                     <li><a  href="medicine/medicineStockAlert"><i class="fa fa-plus-circle"></i><?php echo lang('medicine_stock_alert'); ?></a></li>
                                 <!--     <li><a  href="medicine/medicineExpireAlert"><i class="fa fa-plus-circle"></i><?php echo lang('alert_expire_list'); ?></a></li>-->
 

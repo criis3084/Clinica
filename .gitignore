@@ -1,8 +1,7 @@
 /vendor
 /files
 /uploads
-/application/modules/accountant
-/application/modules/api
+
 /application/modules/appointment
 /application/modules/authorizenet
 /application/modules/doctor
